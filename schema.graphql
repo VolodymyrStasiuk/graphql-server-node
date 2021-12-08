@@ -1,0 +1,13 @@
+type Query
+{
+    greeting: String
+    sayHello(name:String!):String
+    students:[Student]
+}
+
+type Student {
+    id:ID!
+    firstName:String
+    lastName:String
+    fullName:String
+}
